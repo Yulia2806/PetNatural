@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Pet Naturals</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="header__logo">
+            <img src="./images/noonespillow_Simple_Cloud-1.webp" alt="Cloud" width="319px">
+            <img class="logo" src="./images/header_logo-1.webp" alt="logotype Pet Naturals">
+          </div>
+          <div class="nav">
+              <div class="link__container">
+                <a class="nav__link" href="#order">ORDER</a>
+                <a class="nav__link" href="#section2">ABOUT</a>
+                <a class="nav__link" href="#section3">RESULTS</a>  
+              </div>
+          </div>
+        </nav>
+        <h1 class="header__title">Pet Naturals of Vermont, <br> Calming, For Cats</h1>
+        <div class="wrapper">
+          <div>
+            <p class="header__text">Your cat deserves the best pet <br>
+              supplement the world has to offer. <br>
+              That's what's in the package.</p>
+            <div class="advantages__container">
+              <p class="advantages">Features a patented <br>calming blend</p>
+              <p class="advantages">Doesn't contain herbal <br> ingredients</p>
+              <p class="advantages">Helps manage <br> everyday stress</p>    
+            </div>
+          </div>
+          <form action="" method="post" class="form" id="order">
+            <div class="timer">
+              <p class="timer__title">TIME LEFT</p>
+              <div class="timer__items">
+                <div class="timer__item timer__hours">00</div>
+                <div class="timer__item timer__minutes">00</div>
+                <div class="timer__item timer__seconds">00</div>
+              </div>
+              <div class="price">
+                <p class="price__item">120uah</p>
+                <p class="price__item1">60uah</p>
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                required
+                placeholder="Name"
+                class="form-input form-name input"
+              >
+              <input 
+                type="tel"
+                required
+                class="form-input form-tel input"
+                placeholder="+38(0__)__-__-__"
+                id="phone_mask"
+              >
+              <input
+                type="submit"
+                value="ORDER"
+                class="form-input form-button"
+              >
+            </div>
+            <p class="data__text"></p>                      
+          </form>
+          <img class="cats" src="./images/TwoCat.webp" alt="Cats">
+        </div> 
+      </div> 
+    </header>
+    <main>
+      <section class="about" id="section2">
+        <div class="container">
+          <h2 class="about__title">From the manufacturer</h2>
+          <div class="info-container">
+            <div class="info">
+              <img class="info__img info__img1" src="./images/CatSleep.webp" alt="Cat">
+              <div class="info__text">
+                <h4 class="info-title">Keep Calm and Carry On</h4>
+                <p class="text">Are you searching for a better way to ease your pet's separation anxiety or stress? Calming chews help relieve
+                  pet stress without corn, wheat or artificial ingredients.</p>
+              </div>
+            </div>
+            <div class="info">
+              <img class="info__img info__img2" src="./images/lotus.webp" alt="lotus">
+              <div class="info__text">
+                <h4 class="info-title">Peace of Mind</h4>
+                <p class="text">Pet Naturals of Vermont's research-backed formula 
+                  makes it safe to double or triple the amount in times of added stress.</p>
+              </div>
+            </div>
+            <div class="info">
+              <img class="info__img info__img3" src="./images/Treat.webp" alt="Treat">
+              <div class="info__text">
+                <h4 class="info-title">More than a Tasty Treat</h4>
+                <p class="text">Don't let its satisfying chicken liver flavor fool you. Technically, Calming isn't a treat but it sure tastes like one. 
+                  Reward your best buddy with a Calming chew.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="application" id="section3">
+        <div class="container">
+          <h2 class="application__title">Best Uses for Calming Chews</h2>
+          <div class="application__info">
+            <div class="application__text">
+              <p class="text1">Car rides. Vet visits. Thunderstorms. Boarding. Parties. 
+                These are just a handful of times when Calming chews may come in handy. 
+                Does your dog hate to be left home alone? Does your cat love hiding under the bed? 
+                Serve up a Calming chew to help soothe your furry pal's anxiety and make your life easier, too!             </p>
+              <p class="text1">For Best Results:</p>
+              <p class="text1">We recommend administering Calming chews 30 minutes prior to a stressful event. 
+                The 30-minute activation period gives you a chance to increase dosage if you’re not seeing expected results. Calming is safe for unique stress inducing events and for long-term use to help manage everyday stress.</p>
+            </div>
+            <img class="appliction__img" src="./images/red cat.webp" alt="Red Cat" height="300px" width="300px">
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/maskinput.js"></script>
+    <script type="text/javascript">
+      jQuery(function($){
+      $("#phone_mask").mask("+38(099) 999-9999");
+      });
+   </script>
+    <script src="./js/script.js"></script> 
+  </body>
+</html>
